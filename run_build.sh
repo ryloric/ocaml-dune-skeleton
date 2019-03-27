@@ -3,7 +3,7 @@ light_green="\033[38;5;245m"
 light_red="\033[38;5;215m"
 no_color="\033[0m"
 printf "$light_green >>> starting compilation $no_color\n"
-cmd="dune build ./bin/main.$1"
+cmd="dune build ./bin/$1.$2"
 start=`date +%s.%N`
 $cmd
 status=$?
